@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+	<title>Drag and horizondal movement</title>
+	
+	<style type="text/css">
+		body{
+			cursor: move;
+		}		
+		.box-1,
+		.box-2,
+		.box-3,
+		.box-4{
+			width: 150px;
+			height: 150px;
+			background-color: #fc1;
+			border-radius: 50%;
+			text-align: center;
+		}
+		.box-1{ position: fixed; left: 0; top: 0  }
+		.box-2{ position: fixed; left: 0; top: 150px  }
+		.box-3{ position: fixed; left: 0; top: 350px  }
+		.box-4{ position: fixed; left: 0; top: 650px; }
+
+
+		.result{
+			position: fixed;
+			top: 0;
+			right: 0;
+			max-width: 550px;
+			height: auto;
+			font-family: 'Roboto';
+			text-align: right;
+		}
+
+		.cursor-all-scroll{
+			cursor: all-scroll !important; 
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<h3 class="result"></h3>
+	
+	<div class="box-1" data-0="left:0%" data-2500="left:110%"><h1>1</h1></div>	
+
+	<div class="box-2" data-300="left:0%" data-2500="left:150%"><h1>2</h1></div>	
+
+	<div class="box-3" data-300="left:-10%" data-3500="left:130%"><h1>3</h1></div>	
+
+	<div class="box-4" data-1000="left:-10%" data-4500="left:110%"><h1>4</h1></div>	
+
+
+
+<script type="text/javascript" src="j3.js"></script>
+<script type="text/javascript" src="skrollr.min.js"></script>
+<script type="text/javascript" src="custom.js"></script>
+	
+</body>
+
+</html>
+ooooooooo
